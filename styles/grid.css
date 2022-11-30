@@ -1,7 +1,8 @@
 :root {
     --rows: 8;
     --cols: 13;
-    --grid-width: 80vw;
+
+    --grid-width: min(80vw, 80vh);
 
     --gap: 8px;
     --point-size: 8px;
