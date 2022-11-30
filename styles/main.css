@@ -1,0 +1,23 @@
+@import 'grid.css';
+
+:root {
+    --bg-color: #434343;
+    --point-color: #666666;
+
+    font-family: "Fira Code", monospace;
+}
+
+body {
+    margin: 0;
+    background: var(--bg-color);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 100vh;
+}

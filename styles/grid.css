@@ -1,0 +1,55 @@
+:root {
+    --rows: 8;
+    --cols: 13;
+    --grid-width: 80vw;
+
+    --gap: 8px;
+    --point-size: 8px;
+}
+
+#grid {
+    display: grid;
+    width: var(--grid-width);
+    height: calc(var(--grid-width) / var(--cols) * var(--rows));
+    grid-template-columns: repeat(var(--cols), 1fr);
+}
+
+.point {
+    position: absolute;
+    width: var(--point-size);
+    height: var(--point-size);
+    border-radius: 100%;
+    background: var(--point-color);
+    z-index: -1;
+}
+
+.key {
+    position: absolute;
+    width: calc(var(--grid-width) / var(--cols) - var(--gap));
+    height: calc(var(--grid-width) / var(--cols) - var(--gap));
+    border-radius: 15%;
+    background: gray;
+    font-size: calc(var(--grid-width) / 35);
+    user-select: none;
+    z-index: 1;
+}
+
+.key.higher {
+    background: #e06666;
+}
+
+.key.high {
+    background: #eb8a82;
+}
+
+.key.mid {
+    background: #f4ada2;
+}
+
+.key.low {
+    background: #fbcfc5;
+}
+
+.key.lower {
+    background: #fff0ec;
+}
