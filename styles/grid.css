@@ -4,8 +4,8 @@
 
     --grid-width: min(80vw, 80vh);
 
-    --gap: 8px;
-    --point-size: 8px;
+    --gap: calc(var(--grid-width) / 100);
+    --point-size: calc(var(--grid-width) / 100);
 }
 
 #grid {
